@@ -38,7 +38,7 @@ cacheSolve <- function(x,...) {
             return(inverse)           
 	  }else{
  		print("get inverse from cache")
-		inverse<-x$getInverseMatrix
+		inverse<-x$getInverseMatrix()
             return(inverse)
         }
 }
